@@ -1,0 +1,58 @@
+.header_website{
+    line-height: 7rem;
+}
+.header_website header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header_website header .brand{
+    flex-basis: calc(10%);
+    display: flex;
+    justify-content: center;
+}
+
+.header_website{
+    border-bottom: 1px solid #ccc;
+    height: 7rem;
+}
+.header_website nav{
+    flex-basis: calc(80%);
+    display: flex;
+    justify-content: flex-end;
+}
+.header_website nav ul {
+    display: flex;
+}
+.header_website nav ul li{
+    list-style: none;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.header_website nav ul li a{
+    font-weight: 500;
+}
+.header_website nav ul li a:hover{
+    color: dodgerblue;
+}
+.header_website nav ul li.contato{
+    padding: 0 3rem;
+    background-color: dodgerblue;
+    text-transform:capitalize;
+}
+.header_website nav ul li.contato:hover{
+    filter: brightness(1.2);
+}
+.header_website nav ul li.contato a{
+    color: #ffffff;
+}
+
+.header_website nav ul li.contato:last-child{
+    margin:0rem ;
+}
+
+.header_website nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}

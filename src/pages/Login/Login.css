@@ -1,0 +1,166 @@
+.containerLogin {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.containerLogin .left {
+    flex-basis: calc(50%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogin .btn-back {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2rem;
+}
+
+.containerLogin .btn-back svg {
+    color: #6F04D9;
+}
+
+.containerLogin .left .headline {
+    width: 100%;
+    max-width: 600px;
+}
+
+.containerLogin .left .headline h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2, #05C7F2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.containerLogin .left .headline p {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+    color: #1c1c1c;
+}
+
+.containerLogin .left form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.containerLogin .left form input {
+    margin: 10px 0;
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #efefef;
+}
+
+.containerLogin form input[type="submit"] {
+    background: linear-gradient(45deg, #6F04D9, #0597F2, #05C7F2);
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.containerLogin form input[type="submit"]:hover {
+    background: linear-gradient(45deg, #6F04D9, #6F04D9, #6F04D9);
+}
+
+.containerLogin form a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2, #05C7F2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.containerLogin .right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    flex-basis: 50%;
+    background: -webkit-linear-gradient(45deg, #6F04D9, #0597F2, #05C7F2);
+}
+
+.containerLogin .right img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.containerLogin .message {
+    color: red;
+    padding: 10px;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 30px;
+    font-size: 1.5rem;
+}
+
+@media (max-width:1290px) {
+    .containerLogin .right img {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:1024px) {
+    .containerLogin .left .headline h1 {
+        font-size: 4rem;
+    }
+
+    .containerLogin .left .headline p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .containerLogin .left {
+        flex-basis: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .containerLogin .right {
+        padding-top: 30px;
+        flex-basis: 100%;
+        display: none;
+    }
+
+    .containerLogin .left .headline h1 {
+        font-size: 4rem;
+    }
+
+    .containerLogin .left .headline p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .containerLogin .left {
+        padding: 0 20px 30px 20px;
+    }
+
+    .containerLogin .left .headline p,
+    form a {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:425px) {
+    .containerLogin .left .headline p,
+    form a {
+        font-size: 1.3rem;
+    }
+}
