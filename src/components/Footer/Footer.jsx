@@ -2,7 +2,7 @@ import "./Footer.css";
 
 export const Footer = () => {
     return (
-        <footer>
+        <footer className="footer_ead">
             <p>MyEdu © Todos os Direitos Reservados</p>
         </footer>
     )

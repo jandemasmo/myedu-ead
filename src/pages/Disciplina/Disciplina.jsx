@@ -12,11 +12,9 @@ export const Disciplina = () => {
     const id_theme = useParams();
     const { themes, updatetStatusTheme } = useContext(AuthEadContext);
     
-
-
-
     const [result, setResult] = useState([]);
     const [video, setVideo] = useState("");
+    const [showThemes, setShowThemes] = useState(false);
 
 
     async function getThemes() {
@@ -32,6 +30,9 @@ export const Disciplina = () => {
          await updatetStatusTheme(status, id_theme)
     }
 
+    function setListThemeMobile(){
+        setShowThemes(!showThemes)
+    }
 
 
     useEffect(() => {
@@ -44,7 +45,8 @@ export const Disciplina = () => {
             <main className="content_disciplina">
                 <div className="cards">
                     <div className="content_theme">
-                        <div className="disciplina_content_themes">
+                        <div className="show_temas"><button type="button" onClick={setListThemeMobile}>{(showThemes) ? "Esconder Temas" : "Mostrar Temas"}</button></div>
+                        <div className={(showThemes)? "disciplina_content_themes mobile": "disciplina_content_themes"}>
                             {
                                 result.map((element) => {
                                     let item = element.status.map(i => i.status) 
@@ -55,7 +57,7 @@ export const Disciplina = () => {
                                         video={element.videoLessons}
                                         id_theme={element._id}
                                         clickLink={setLinkVideo}
-                                        statusTheme={(item[0] != undefined) ? item[0] : false}
+                                        statusTheme={(item[0] !== undefined) ? item[0] : false}
                                         clickUpdateStatus={setStatus}
                                     />
 

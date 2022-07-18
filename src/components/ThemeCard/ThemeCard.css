@@ -60,3 +60,10 @@
 .theme_card.active .theme_card_title .icon{
     color: #ffffff;
 }
+
+@media (max-width: 768px){
+    
+    .tooltip:after{
+        right: 10px;
+    }
+}

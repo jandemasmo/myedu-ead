@@ -19,8 +19,26 @@
     width: 100%;
     height: calc(100vh - 76%);
 }
-
+.show_temas{
+    flex-basis: calc(100%);
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    padding: 1rem 0;
+}
+.show_temas button{
+    background-color: dodgerblue;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    border: none;   
+    cursor: pointer;
+}
 .disciplina_content_themes {
+    display: flex;
+    flex-direction: column;
     flex-basis: calc(30% - 2rem);
     border: 1px solid #ccc;
     margin-right: 2rem;
@@ -45,9 +63,19 @@
     .disciplina_content_themes {
         flex-basis: 100%;
         margin-right: 0rem;
+        overflow-y: auto;
+        height: 100%;
+        display: none;
+    }
+    .disciplina_content_themes.mobile{
+        display: flex;
+    }
+    .show_temas{
+        display: flex;
     }
 
     .theme_video {
+        margin-top: 1rem;
         flex-basis: 100%;
         margin-bottom: 10rem;
     }
