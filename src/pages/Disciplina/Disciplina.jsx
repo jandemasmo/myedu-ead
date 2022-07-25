@@ -1,6 +1,6 @@
 import "./Disciplina.css";
-import { Footer } from "../../components/Footer/Footer";
-import { Header } from "../../components/Header/Header";
+import { FooterEad } from "../../components/FooterEad/FooterEad";
+import { HeaderEad } from "../../components/HeaderEad/HeaderEad";
 import { ThemeCard } from "../../components/ThemeCard/ThemeCard";
 import { useContext, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -41,7 +41,7 @@ export const Disciplina = () => {
 
     return (
         <>
-            <Header />
+            <HeaderEad />
             <main className="content_disciplina">
                 <div className="cards">
                     <div className="content_theme">
@@ -76,7 +76,7 @@ export const Disciplina = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
+            <FooterEad />
         </>
     )
 }

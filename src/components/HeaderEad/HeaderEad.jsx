@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./HeaderEad.css";
 import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthEadContext } from "../../contexts/authEad";
@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { FaUser } from "react-icons/fa"
 
 
-export const Header = (props) => {
+export const HeaderEad = (props) => {
     const [toggleMenu, setToggleMenu] = useState(false);
     const { logout, user } = useContext(AuthEadContext);
 

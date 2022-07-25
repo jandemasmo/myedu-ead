@@ -8,37 +8,49 @@ import { Website } from "./pages/Website/Website";
 import { AuthEadProvider, AuthEadContext } from "./contexts/authEad";
 
 const eadRoutes = () => {
+  const Private = ({ children }) => {
+    const { authenticated, loading } = useContext(AuthEadContext);
 
-    const Private = ({ children }) => {
-
-        const { authenticated, loading } = useContext(AuthEadContext);
-
-        if (loading) {
-            return <div>Carregando...</div>;
-        }
-
-        if (!authenticated) {
-            console.log(authenticated)
-            return <Navigate to="/ead" />;
-        }
-
-        return children;
-
+    if (loading) {
+      return <div>Carregando...</div>;
     }
 
+    if (!authenticated) {
+      console.log(authenticated);
+      return <Navigate to="/ead" />;
+    }
 
-    return (
-        <BrowserRouter>
-            <AuthEadProvider>
-                <Routes>
-                    <Route path="/" element={<Website/>}></Route>
-                    <Route path="/ead" element={<Login />}></Route>
-                    <Route path="/ead/dashboard" element={<Private> <Dashboard /> </Private>}></Route>
-                    <Route path="/ead/disciplina/:id" element={<Private> <Disciplina /> </Private>}></Route>
-                </Routes>
-            </AuthEadProvider>
-        </BrowserRouter>
-    )
-}
+    return children;
+  };
+
+  return (
+    <BrowserRouter>
+      <AuthEadProvider>
+        <Routes>
+          <Route path="/" element={<Website />}></Route>
+          <Route path="/ead" element={<Login />}></Route>
+          <Route
+            path="/ead/dashboard"
+            element={
+              <Private>
+                {" "}
+                <Dashboard />{" "}
+              </Private>
+            }
+          ></Route>
+          <Route
+            path="/ead/disciplina/:id"
+            element={
+              <Private>
+                {" "}
+                <Disciplina />{" "}
+              </Private>
+            }
+          ></Route>
+        </Routes>
+      </AuthEadProvider>
+    </BrowserRouter>
+  );
+};
 
 export default eadRoutes;

@@ -1,6 +1,6 @@
 import "./Dashboard.css";
-import { Footer } from "../../components/Footer/Footer";
-import { Header } from "../../components/Header/Header";
+import { FooterEad } from "../../components/FooterEad/FooterEad";
+import { HeaderEad } from "../../components/HeaderEad/HeaderEad";
 import { Card } from "../../components/Card/Card";
 import { useContext, useEffect, useState } from "react";
 import { AuthEadContext } from "../../contexts/authEad";
@@ -22,7 +22,7 @@ export const Dashboard = () => {
     
     return (
         <>
-            <Header name={user.name} />
+            <HeaderEad name={user.name} />
 
             <main className="content_dashboard">
                 <div className="title">
@@ -44,7 +44,7 @@ export const Dashboard = () => {
                 </div>
             </main>
 
-            <Footer />
+            <FooterEad />
         </>
     )
 }

@@ -41,7 +41,7 @@ export const BannerCarousel = () => {
                         <p>Nossa plataforma foi desenvolvida e pensada no seu aprendizado</p>
                         <div className="banner_cta">
                             <Cta text="Saiba Mais" link="/" background="#1e90ff" color="#ffffff" />
-                            <Cta text="Saiba Mais" link="/" background="#ffffff" color="#1e90ff" />
+                            <Cta text="Inscreva-se" link="/" background="#ffffff" color="#1e90ff" />
                         </div>
 
                     </div>
