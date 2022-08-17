@@ -1,0 +1,114 @@
+.contato_website{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 130rem;
+    width: 100%;
+    padding: 0 1rem 10rem 1rem ;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.contato_website h2{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 4rem;
+}
+.contato_website form{
+    flex-basis: calc(50% - 2rem);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+}
+.contato_website input[type="text"],
+.contato_website input[type="email"]{
+    flex-basis: calc(50% - 1rem);
+}
+.contato_website input[type="submit"],
+.contato_website textarea{
+    flex-basis: calc(100%);
+}
+.contato_website form input,
+.contato_website form textarea{
+        height: 6rem;
+        padding-left: 1rem;
+        font-size: 1.7rem;
+        margin: 1rem 0;
+        outline-color: dodgerblue;
+}
+.contato_website form input[type="submit"]{
+    background-color: dodgerblue;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.contato_website form textarea{
+    height: 15rem;
+    padding:1rem ;
+}
+.address{
+    flex-basis: calc(50% - 2rem);
+}
+.address .text{
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin: 1rem 0 2rem;
+}
+.address .contato_icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.address .contato_icon span{
+    background-color: dodgerblue;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+.address .contato_icon span svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff ;
+    font-size: 2rem;
+}
+.address .contato_icon div h3{
+    font-size: 2rem;
+    color: dodgerblue;
+}
+.address .contato_icon div p{
+    font-size: 1.5rem;
+}
+
+.map iframe{
+    width: calc(100vw - 17px);
+    height: 40rem;
+    border: none;
+}
+.success_message{
+    font-size: 1.5rem;
+    color: dodgerblue;
+}
+@media (max-width:768px){
+    .contato_website h2{
+        font-size: 2.7rem;
+    }
+    .contato_website input[type="text"],
+    .contato_website input[type="email"]{
+        flex-basis: calc(100%);
+    }
+}
+@media (max-width:426px){
+    .contato_website input[type="text"],
+    .contato_website input[type="email"]{
+        flex-basis: calc(100%);
+    }
+    .address{
+        flex-basis: calc(100%);
+    }
+    .contato_website form{
+        flex-basis: calc(100%);
+    }
+}

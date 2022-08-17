@@ -1,0 +1,89 @@
+.header_website header{
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 130rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_mobile_website{
+    font-size: 2.5rem;
+    display: none;
+    color: dodgerblue;
+    position: absolute;
+    z-index: 999;
+    right: 1rem;
+}
+.brand_website svg{
+    width: 100%;
+    max-width: 15rem;
+}
+.header_website nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.header_website nav.mobile{
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 999;
+    background-color: #ffffff;
+}
+.header_website nav.mobile ul{
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.header_website nav ul li{
+    list-style: none;
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.header_website nav.mobile ul li{
+    margin: 2rem;
+}
+.header_website nav ul li a{
+    font-weight: 500;
+}
+.header_website nav ul li a:hover{
+    color: dodgerblue;
+}
+.header_website nav ul li.acessar_ead{
+    padding: 0 4rem;
+    background-color: dodgerblue;
+    text-transform:capitalize;
+}
+.header_website nav ul li.acessar_ead:hover{
+    filter: brightness(1.2);
+}
+.header_website nav ul li.acessar_ead a{
+    color: #ffffff;
+}
+.header_website nav ul li.acessar_ead:last-child{
+   margin: 0;
+   padding: 1rem 5rem;
+   border-radius: 2rem;
+}
+.header_website nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    .header_website header{
+        padding: 0 1rem;
+    }
+    .header_website nav.desktop{
+        display: none;
+    }
+    .menu_mobile_website{
+        display: flex;
+    }
+}

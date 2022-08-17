@@ -1,0 +1,92 @@
+.banner_carousel .banner {
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+.banner_carousel .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.5;
+}
+
+.banner_carousel .banner .content {
+    width: 100%;
+    max-width: 130rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative
+}
+
+.banner_carousel .banner .content h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: dodgerblue;
+}
+
+.banner_carousel .banner .content h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    max-width: 50rem;
+    margin-top: 2rem;
+}
+
+.banner_carousel .banner .content p {
+    color: #ffffff;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ffffff !important;
+}
+
+.banner_cta {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 1rem;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+    
+}
+@media (max-width: 589px) {
+    .banner_carousel .banner {
+        height: 80vh;
+    }
+    
+}
+@media (max-width: 426px) {
+    .banner{
+        background-position: 25% 75%;
+    }
+    .banner_carousel .banner .content h1 {
+        font-size: 3.5rem;
+        max-width: 80%;
+    }  
+    .banner_carousel .banner .content p{
+        max-width: 80%;
+    }
+    .banner_cta{
+        grid-auto-flow: row;
+        grid-gap: 5px;
+    }
+}
