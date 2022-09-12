@@ -1,146 +1,155 @@
 .footer_webite {
-    background-color: #212529;
+  background-color: #212529;
 }
 
 .footer_content {
-    max-width: 130rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 0 1rem;
+  max-width: 130rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 1rem;
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .footer_content .footer_content_int {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 10rem 0 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 10rem 0 5rem;
 }
 
 .footer_content .footer_links {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-basis: calc(33.3% - 2rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.3% - 2rem);
 }
 
 .footer_content .footer_links div,
 .footer_content .footer_contato div,
 .footer_content .footer_newsletter div {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .footer_content .footer_links h2,
 .footer_content .footer_contato h2,
 .footer_content .footer_newsletter h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .footer_content .footer_links a,
 .footer_content .footer_contato p,
 .footer_content .footer_newsletter p {
-    font-size: 1.5rem;
-    margin: .7rem 0;
+  font-size: 1.5rem;
+  margin: 0.7rem 0;
 }
 
 .footer_content .footer_contato p {
-    margin-bottom: 1.7rem;
+  margin-bottom: 1.7rem;
 }
 
 .footer_content .footer_links div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_content .footer_links div a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer_content .footer_contato {
-    display: flex;
-    flex-direction: column;
-    flex-basis: calc(33.3% - 2rem);
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.3% - 2rem);
 }
 
 .footer_content .footer_contato .social_icons {
-    display: flex;
+  display: flex;
 }
 
 .footer_content .footer_contato .social_icons a {
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ffffff;
-    margin-right: 1rem;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 2rem;
-    padding: 0;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  margin-right: 1rem;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0;
 }
 
 .footer_content .footer_contato .social_icons a:hover {
-    background-color: #ffffff;
-    color: dodgerblue;
+  background-color: #ffffff;
+  color: dodgerblue;
 }
 
 .footer_content .footer_newsletter {
-    display: flex;
-    flex-direction: column;
-    flex-basis: calc(33.3% - 2rem);
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(33.3% - 2rem);
 }
 
 .footer_content .footer_newsletter input[type="email"] {
-    height: 6rem;
-    width: 80%;
-    padding-left: 1rem;
-    font-size: 1.7rem;
+  height: 6rem;
+  width: 80%;
+  padding-left: 1rem;
+  font-size: 1.7rem;
 }
 
 .footer_content .footer_newsletter input[type="submit"] {
-    width: 20%;
-    height: 6rem;
-    background-color: dodgerblue;
-    border: none;
-    font-size: 1.7rem;
-    color: #ffffff;
-    cursor: pointer;
+  width: 20%;
+  height: 6rem;
+  background-color: dodgerblue;
+  border: none;
+  font-size: 1.7rem;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .direitos_reservados {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-top: 1px solid #505050;
-    font-size: 1.2rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #505050;
+  font-size: 1.2rem;
+}
+.direitos_reservados .acesso_admin {
+  padding: 1rem;
+}
+.direitos_reservados .acesso_admin a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: dodgerblue;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 @media (max-width: 768px) {
+  .footer_content .footer_links,
+  .footer_content .footer_contato {
+    flex-basis: calc(50% - 2rem);
+  }
 
-    .footer_content .footer_links,
-    .footer_content .footer_contato {
-        flex-basis: calc(50% - 2rem);
-    }
-
-    .footer_content .footer_newsletter {
-        flex-basis: calc(100%);
-    }
+  .footer_content .footer_newsletter {
+    flex-basis: calc(100%);
+  }
 }
 
 @media (max-width: 426px) {
-
-    .footer_content .footer_links,
-    .footer_content .footer_contato,
-    .footer_content .footer_newsletter {
-        flex-basis: calc(100%);
-        margin-bottom: 3rem;
-    }
+  .footer_content .footer_links,
+  .footer_content .footer_contato,
+  .footer_content .footer_newsletter {
+    flex-basis: calc(100%);
+    margin-bottom: 3rem;
+  }
 }

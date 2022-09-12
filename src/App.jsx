@@ -1,6 +1,5 @@
 import EadRoutes from "./eadRoutes";
 
-
 function App() {
   return (
     <>
